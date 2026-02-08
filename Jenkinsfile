@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout Repo') {
+            steps {
+                git 'https://github.com/sunny8421/mygitcode.git'
+            }
+        }
+
+        stage('Open newfile') {
+            steps {
+                echo 'Reading newfile....'
+                bat 'Automation'
+            }
+        }
+    }
+}
