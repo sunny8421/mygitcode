@@ -8,3 +8,5 @@ spec:
   - name: gradle-test
     image: gradle-test:1.0
     command: ["gradle", "test"]
+    imagePullPolicy : Never
+    
