@@ -11,7 +11,7 @@ pipeline {
         stage('Open newfile') {
             steps {
                 echo 'Reading newfile....'
-                bat 'Automation'
+                bat 'Automation.txt'
             }
         }
     }
