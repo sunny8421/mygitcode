@@ -3,10 +3,9 @@ kind: Pod
 metadata:
   name: gradle-test-pod
 spec:
+  containers:
+    - name: gradle-test
+      image: gradle-test:1.0
+      command: ["gradle"]
+      args: ["--version"]
   restartPolicy: Never
-containers:
-- name: gradle-test
-  image: gradle-test:1.0
-  command: ["gradle"]
-  args: ["--version"]
-    
